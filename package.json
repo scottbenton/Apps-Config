@@ -1,11 +1,10 @@
 {
   "name": "@scottbenton/apps-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Configuration files for the apps microfrontend",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "config",
     "dist"
   ],
   "scripts": {
