@@ -38,7 +38,7 @@ export function getAPIOverrides(): IAPIOverrides {
   return parsedOverrides;
 }
 
-export function setAPIOverride(key: API, url: string) {
+export function setAPIOverride(key: API, url: string | undefined) {
   const newOverrides = { ...getAPIOverrides() };
 
   if (url) {

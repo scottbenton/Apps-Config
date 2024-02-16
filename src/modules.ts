@@ -52,7 +52,7 @@ export function getModuleOverrides(): IModuleOverrides {
   return parsedOverrides;
 }
 
-export function setModuleOverride(scope: ModuleScope, url: string) {
+export function setModuleOverride(scope: ModuleScope, url: string | undefined) {
   const newOverrides = { ...getModuleOverrides() };
 
   if (url) {
