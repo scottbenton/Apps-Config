@@ -2,6 +2,7 @@ export enum ModuleScope {
   HomePage = "home_page",
   DeveloperTools = "dev_tools",
   Authentication = "auth_ui",
+  DungeonManager = "dungeon_manager",
 }
 
 export interface IModule {
@@ -32,6 +33,12 @@ export const modules: Record<ModuleScope, IModule> = {
     description: "Routes, contexts, and hooks related to authentication",
     scope: ModuleScope.Authentication,
     defaultUrl: "https://scottbenton-auth-ui.web.app",
+  },
+  [ModuleScope.DungeonManager]: {
+    name: "Dungeon Manager",
+    description: "Helpers for running your table top role playing games",
+    scope: ModuleScope.Authentication,
+    defaultUrl: "https://apps-dungeon-manager.web.app",
   },
 };
 
