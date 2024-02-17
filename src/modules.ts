@@ -37,7 +37,7 @@ export const modules: Record<ModuleScope, IModule> = {
   [ModuleScope.DungeonManager]: {
     name: "Dungeon Manager",
     description: "Helpers for running your table top role playing games",
-    scope: ModuleScope.Authentication,
+    scope: ModuleScope.DungeonManager,
     defaultUrl: "https://apps-dungeon-manager.web.app",
   },
 };
