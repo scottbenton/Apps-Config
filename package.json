@@ -15,5 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react-singleton-context": "1.0.5"
   }
 }
