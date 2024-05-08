@@ -23,7 +23,7 @@ export const apis: Record<API, IAPI> = {
   [API.DungeonManager]: {
     name: "Dungeon Manager API",
     description: "This api is the backend for the dungeon manager app",
-    key: API.Auth,
+    key: API.DungeonManager,
     defaultUrl: "https://api.dungeon-manager.scottbenton.dev",
   },
 };
