@@ -1,5 +1,6 @@
 export enum API {
   Auth = "auth_api",
+  DungeonManager = "dungeon_manager_api",
 }
 
 export interface IAPI {
@@ -18,6 +19,12 @@ export const apis: Record<API, IAPI> = {
       "This api handles setting and fetching user credentials, sessions, and info",
     key: API.Auth,
     defaultUrl: "https://api.auth.scottbenton.dev",
+  },
+  [API.DungeonManager]: {
+    name: "Dungeon Manager API",
+    description: "This api is the backend for the dungeon manager app",
+    key: API.Auth,
+    defaultUrl: "https://api.dungeon-manager.scottbenton.dev",
   },
 };
 
