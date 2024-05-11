@@ -3,6 +3,7 @@ export enum ModuleScope {
   DeveloperTools = "dev_tools",
   Authentication = "auth_ui",
   DungeonManager = "dungeon_manager",
+  IronLink = "iron_link",
 }
 
 export interface IModule {
@@ -39,6 +40,12 @@ export const modules: Record<ModuleScope, IModule> = {
     description: "Helpers for running your table top role playing games",
     scope: ModuleScope.DungeonManager,
     defaultUrl: "https://apps-dungeon-manager.web.app",
+  },
+  [ModuleScope.IronLink]: {
+    name: "Iron Link",
+    description: "Ironsworn character sheet tool",
+    scope: ModuleScope.IronLink,
+    defaultUrl: "https://iron-link.web.app",
   },
 };
 
